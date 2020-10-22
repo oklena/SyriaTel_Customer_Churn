@@ -23,8 +23,10 @@ The overall goal for our group was to create a model that has the lowest chance 
 The [project data](https://www.kaggle.com/becksddf/churn-in-telecoms-dataset) came from Kaggle.com.  It contains data on phoneplans from over 3300 customers detailing information specific to billing of the customer, information specific to the customer, and information detailing each customers plan, the number of times a customer has called customer service, and finally whether or not the customer has cancelled their contract which is represented by churn in the dataset.  The data can most esily be uploaded to a notebook using the Pandas read .csv method. 
 
 ## Data Preperation/Exploration
-During the implementation of the first simple model churn was chosen as the target feature of our models since the goal was to find how the features would interact to show why a person might cancel their contract.  This feature was separated from the rest and the entirety of the features were used to implement a train-test split to be applied to the models.
+When preparing the data the categorical features were placed in a separate datafram and one-hot-encoded it was then added to the numerical features after they had been scaled to prevent over penalization from our models.  During the implementation of the first simple model, churn was chosen as the target feature of our models since the goal was to find how the features would interact to show why a person might cancel their contract.  This feature was separated from the rest and placed in a variable and the entirety of the features were used to implement a train-test split to be applied to the models.
 
 ### Linear Regression Model
-A linear regression model was used for the first simple model
+Logistic regression was used as our first simple model.  It is designed to compare the conditional probabilities of many independent features and then uses those calculations to find the total conditional probability of the target feature. for this model all of the features in the sample set were used to calculate the overall likelihood of a person canceling their contract.  The final linear regression model used hyperperameter tuning to reach a best final F1 score of .491.
+
+###
     
