@@ -6,6 +6,6 @@ This project analyzes what might cause someone to cancel their service to SyriaT
 
 ### [Notebooks](https://github.com/oklena/SyriaTel_Customer_Churn/tree/master/notebooks)
 
-### [Data](https://github.com/oklena/SyriaTel_Customer_Churn/tree/master/notebooks
+### [Data](https://github.com/oklena/SyriaTel_Customer_Churn/tree/master/notebooks)
 
 ### 
