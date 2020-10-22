@@ -1,3 +1,5 @@
+![SyriaTel Logo](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/SyriatelLogo)
+
 # SyriaTel Customer Churn Project
 
 This project analyzes what might cause someone to cancel their service to SyriaTel and predict who might drop their service in the near future.
