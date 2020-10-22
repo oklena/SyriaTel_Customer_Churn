@@ -28,7 +28,7 @@ The [project data](https://www.kaggle.com/becksddf/churn-in-telecoms-dataset) ca
 When preparing the data the categorical features were placed in a separate datafram and one-hot-encoded it was then added to the numerical features after they had been scaled to prevent over penalization from our models.  During the implementation of the first simple model, churn was chosen as the target feature of our models since the goal was to find how the features would interact to show why a person might cancel their contract.  This feature was separated from the rest and placed in a variable and the entirety of the features were used to implement a train-test split to be applied to the models.
 
 ### Linear Regression Model
-Logistic regression was used as our first simple model.  It is designed to compare the conditional probabilities of many independent features and then uses those calculations to find the total conditional probability of the target feature. for this model all of the features in the sample set were used to calculate the overall likelihood of a person canceling their contract.  The final linear regression model used hyperperameter tuning to reach a best final F1 score of .491.
+Logistic regression was used as our first simple model.  It is designed to compare the conditional probabilities of many independent features and then uses those calculations to find the total conditional probability of the target feature. for this model all of the features in the sample set were used to calculate the overall likelihood of a person canceling their contract.  The final linear regression model used hyperperameter tuning to reach a best final F1 score of .491.  This low F1 score shows this model is underfit.
 
 ###
     
