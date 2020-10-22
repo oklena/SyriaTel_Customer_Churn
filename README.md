@@ -1,5 +1,5 @@
 ![SyriaTel Logo](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/SyriatelLogo)
-###### image from logolynx.com
+
 # SyriaTel Customer Churn Project
 
 This project analyzes what might cause someone to cancel their service to SyriaTel and predict who might drop their service in the near future.
@@ -32,3 +32,4 @@ Logistic regression was used as our first simple model.  It is designed to compa
 
 ###
     
+##### Title banner from logolynx.com
