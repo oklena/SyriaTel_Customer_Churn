@@ -43,13 +43,9 @@ The K-nearest neighbors model uses a distance metric to identify if a new data p
 ![second_knn](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/second_knn.jpg)
 
 ### Random Forest Classifier
-A random forest classifier uses a discrete function to identify how to give weight to one posibility over another until each possibility has been considered and weighed leaving a clear outcome. The first random forest model has an f1 core of zero due to the fact the model could not predict which people would drop their contracts as represented by the lower left square.  The second model used hyperperameter tuning and SMOTE to the data of the Random Forest Model to get a much more blanced return from the model for the false positives and true negetives.  This model was the final model for the project and had a mean F1 score of .775.
+A random forest classifier uses a discrete function to identify how to give weight to one posibility over another until each possibility has been considered and weighed leaving a clear outcome. The first random forest model has an f1 core of zero due to the fact the model could not predict which people would drop their contracts as represented by the lower left square.  The second model used hyperperameter tuning and SMOTE to the data of the Random Forest Model to get a much more blanced return from the model for the false positives and true negetives.  This model was the final model for the project and had a mean F1 score of .775.  Overall this model is the most accurate and provides the best performance.
 
 ![first_rand](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/first_rand.jpg)
 ![second_rand](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/second_rand.jpg)
-
-## Evaluation
-  
-  
   
 #### Title banner from logolynx.com
