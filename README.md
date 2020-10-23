@@ -31,16 +31,20 @@ When preparing the data the categorical features were placed in a separate dataf
 Logistic regression was used as our first simple model.  It is designed to compare the conditional probabilities of many independent features and then uses those calculations to find the total conditional probability of the target feature. The linear regression model used hyperperameter tuning to reach an F1 score of .485.
 
 ![first_log](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/first_log.jpg)
+![second_log](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/second_log.jpg)
 
 ### K-Nearest Neighbors Model
 The K-nearest neighbors model uses a distance metric to identify if a new data point will be labeled the same as features near its predicted location by averaging the number of features with each label and giving the new point the label of the features with the highest mean. For this model the SMOTE function was used to balance the sample data and the target data set to help prevent bias between the datasets.  The KNN model F1 score was a .873 but it was over fit to the training data.
 
 ![first_knn](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/first_knn.jpg
 )
+![second_knn](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/second_knn.jpg)
+
 ### Random Forest Classifier
 A random forest classifier uses a discrete function to identify how to give weight to one posibility over another until each possibility has been considered and weighed leaving a clear outcome.  SMOTE was also applied to the data of the Random Forest Model to balance the difference between the sample data set and the target data set.  This model was the final model for the project and had a mean F1 score of .775.
 
-![second_rand](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/second_knn.jpg)
+![first_rand](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/first_rand.jpg)
+![second_rand](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/second_rand.jpg)
 
 ## Evaluation
 The metric used to evaluate each model was the F1 score or the harmonic mean of the recall and precision scores.  These are the measueres of the number of false negatives and true negatives.  The method for calculating the F1 score causes the number to be much lower if there are too many of either error when the average is taken, for this reason it is a good measure for the overall performance of the models.  The Logistic Regression model had a high false positive metric at 651 and low false negetive at 90 showing a low performance in the f1 score.  The K-nearest neighbors model has a similar issue and an even lower F1 score.  However, the final model has a high f1 score and a good measure between the recall and precision metrics.
