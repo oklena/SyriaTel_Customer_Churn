@@ -1,4 +1,4 @@
-![SyriaTel Logo](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/SyriatelLogo)
+![SyriaTel Logo](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/SyriatelLogo.jpeg)
 
 # SyriaTel Customer Churn Project
 
