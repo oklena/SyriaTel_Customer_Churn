@@ -27,8 +27,11 @@ The [project data](https://www.kaggle.com/becksddf/churn-in-telecoms-dataset) ca
 ## Data Preperation/Exploration
 When preparing the data the categorical features were placed in a separate dataframe and one-hot-encoded. It was then added to the numerical features after they had been scaled to prevent over penalization from our models.  During the implementation of the first simple model, churn was chosen as the target feature of our models since the goal was to find how the features would interact to predict both types of error.  This feature was separated from the rest and placed in a variable and the entirety of the features were used to implement a train-test split to be applied to the models.  
 
+![ChurnCustServCall](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/Churn_CustServCall.png)
+
 The metric used to evaluate each model was the F1 score or the harmonic mean of the recall and precision scores.  These number are represented by the upper right square, the false positive, and the lower left square, the false negetive when combined and averaged against the number of true positives.  These two metirics are then used to calculate the f1 score.  The method for calculating the F1 score causes the number to be much lower if there are too many of either error when the average is taken, for this reason it is a good measure for the overall performance of the models.
 
+![RF5featureimportances](https://github.com/oklena/SyriaTel_Customer_Churn/blob/master/reports/figures/RF_5_feature_importances.png)
 ### Logistic Regression Model
 Logistic regression was used as our first simple model.  It is designed to compare the conditional probabilities of many independent features and then uses those calculations to find the total conditional probability of the target feature. The first linear model represented by the first confusion matix shown below had a mean f1 score of .351. The second linear regression model represented by the lower of the two confusion matrices had a lower f1 score but changed some the functions features to reach a mean F1 score of .416 though the precision and recall scores were not as balanced.
 
